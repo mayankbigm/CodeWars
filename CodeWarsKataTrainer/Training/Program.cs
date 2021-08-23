@@ -9,9 +9,11 @@ namespace Training
         {
             Console.WriteLine("Begin!");
 
+            // Counting case insensitive duplicates in string of letters and digits
+            var result = CountingDuplicates.DuplicateCount("asdfg");
+
             // Simple Pig Latin
-            var result = SimplePigLatin.PigIt("Hello world !");
-            Console.WriteLine(result);
+            //var result = SimplePigLatin.PigIt("Hello world !");
 
             //LineTickets
             //var result = LineTickets.Tickets(new int[] { 25, 25, 50, 100, 25, 50, 25, 100, 25, 50, 25, 100, 25, 50, 25, 100, 50, 50 });
@@ -24,6 +26,8 @@ namespace Training
 
             // CreatePhoneNumber
             //FormatPhoneNumber.CreatePhoneNumber(new int[]{1,2,3,4,5,6,7,8,9,0});
+
+            Console.WriteLine(result);
 
             Console.WriteLine("End!");
         }
