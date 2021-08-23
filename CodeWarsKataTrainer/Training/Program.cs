@@ -9,8 +9,11 @@ namespace Training
         {
             Console.WriteLine("Begin!");
 
+            // AreTheyTheSame
+            var result = AreTheyTheSame.Compare(new[] { -121, -144, 19, -161, 19, -144, 19, -11 }, new[] { 121, 14641, 20736, 361, 25921, 361, 20736, 361 });
+
             // Counting case insensitive duplicates in string of letters and digits
-            var result = CountingDuplicates.DuplicateCount("asdfg");
+            // var result = CountingDuplicates.DuplicateCount("asdfg");
 
             // Simple Pig Latin
             //var result = SimplePigLatin.PigIt("Hello world !");
