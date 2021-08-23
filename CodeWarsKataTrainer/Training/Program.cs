@@ -16,7 +16,10 @@ namespace Training
             //ListFilterer.GetIntegersFromList(new List<object>(){1, 2, "a", "b"});
 
             //HighAndLowNumbers
-            var result = HighestLowestNumbersInString.HighAndLow("8 3 -5 42 -1 0 0 -9 4 7 4 -4");
+            //var result = HighestLowestNumbersInString.HighAndLow("8 3 -5 42 -1 0 0 -9 4 7 4 -4");
+
+            //LineTickets
+            var result = LineTickets.Tickets(new int[] { 25, 25, 50, 100, 25, 50, 25, 100, 25, 50, 25, 100, 25, 50, 25, 100, 50, 50 });
             Console.WriteLine(result);
 
             Console.WriteLine("End!");
