@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using Training._6kyu;
 
 namespace Training
 {
@@ -9,8 +10,11 @@ namespace Training
         {
             Console.WriteLine("Begin!");
 
+            // Convert string to camel case
+            var result = StringCaseConversions.ToCamelCase("hupfqlpcoi_caoaqawcye-iyxoukelqe");
+
             // AreTheyTheSame
-            var result = AreTheyTheSame.Compare(new[] { -121, -144, 19, -161, 19, -144, 19, -11 }, new[] { 121, 14641, 20736, 361, 25921, 361, 20736, 361 });
+            //var result = AreTheyTheSame.Compare(new[] { -121, -144, 19, -161, 19, -144, 19, -11 }, new[] { 121, 14641, 20736, 361, 25921, 361, 20736, 361 });
 
             // Counting case insensitive duplicates in string of letters and digits
             // var result = CountingDuplicates.DuplicateCount("asdfg");
