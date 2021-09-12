@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Linq;
 using System.Text;
 
 namespace Training._6kyu
@@ -55,6 +54,41 @@ namespace Training._6kyu
             //}
 
             //return string.Join(string.Empty, chars);
+        }
+
+        /// <summary>
+        /// Complete the solution so that the function will break up camel casing, using a space between words.
+        /// Example
+        /// "camelCasing"  =>  "camel Casing"
+        /// "identifier"   =>  "identifier"
+        /// ""             =>  ""
+        /// </summary>
+        /// <param name="str"></param>
+        /// <returns></returns>
+        public static string BreakCamelCase(string str)
+        {
+            if (string.IsNullOrWhiteSpace(str))
+            {
+                return string.Empty;
+            }
+
+            var sb = new StringBuilder();
+
+            foreach (char c in str)
+            {
+                if (char.IsUpper(c))
+                {
+                    sb.Append(' ').Append(c);
+                }
+                else
+                {
+                    sb.Append(c);
+                }
+            }
+
+            return sb.ToString();
+
+            // best answer: https://www.codewars.com/kata/5208f99aee097e6552000148/solutions/csharp
         }
     }
 }

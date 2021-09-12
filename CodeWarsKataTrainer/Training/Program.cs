@@ -10,8 +10,11 @@ namespace Training
         {
             Console.WriteLine("Begin!");
 
+            // break up camel casing, using a space between words
+            var result = StringCaseConversions.BreakCamelCase("camelCasing");
+
             // Convert string to camel case
-            var result = StringCaseConversions.ToCamelCase("hupfqlpcoi_caoaqawcye-iyxoukelqe");
+            //var result = StringCaseConversions.ToCamelCase("hupfqlpcoi_caoaqawcye-iyxoukelqe");
 
             // AreTheyTheSame
             //var result = AreTheyTheSame.Compare(new[] { -121, -144, 19, -161, 19, -144, 19, -11 }, new[] { 121, 14641, 20736, 361, 25921, 361, 20736, 361 });
